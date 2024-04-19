@@ -1,4 +1,4 @@
-import PromtCard from '@components/PromtCard'
+import PromptCard from '@components/PromtCard'
 
 const Profile = ({ name, desc, data, handleEdit, handleDelete }) => (
   <section className="w-full">
@@ -9,7 +9,7 @@ const Profile = ({ name, desc, data, handleEdit, handleDelete }) => (
 
     <div className="prompt_layout mt-10">
       {data.map((post, i) => (
-        <PromtCard
+        <PromptCard
           key={i}
           post={post}
           handleEdit={() => handleEdit && handleEdit(post)}

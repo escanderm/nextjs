@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { useSession } from 'next-auth/react'
 import { usePathname, useRouter } from 'next/navigation'
 
-const PromtCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
+const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
   const [copied, setCopied] = useState('')
 
   const { data: session } = useSession()
@@ -88,4 +88,4 @@ const PromtCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
     </div>
   )
 }
-export default PromtCard
+export default PromptCard

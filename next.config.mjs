@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
     // Заменяем "domains" на "remotePatterns" и используем массив строк
     remotePatterns: [
@@ -11,6 +12,7 @@ const nextConfig = {
       }
     ]
   },
+
   webpack(config) {
     config.experiments = {
       ...config.experiments,

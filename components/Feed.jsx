@@ -1,13 +1,13 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import PromtCard from '@components/PromtCard'
+import PromptCard from '@components/PromtCard'
 
 const PromptCardList = ({ data, handleTagClick }) => {
   return (
     <div className="prompt_layout mt-16">
       {data.map((post, i) => (
-        <PromtCard key={i} post={post} handleTagClick={handleTagClick} />
+        <PromptCard key={i} post={post} handleTagClick={handleTagClick} />
       ))}
     </div>
   )
